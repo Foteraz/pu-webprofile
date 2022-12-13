@@ -178,8 +178,8 @@
 }
 /* -- Button About -- */
 #button {
-	margin-bottom:auto; 
 	position : absolute;
+	margin-bottom:auto; 
 	color:white;
 	background-color: #606060;
 	border-radius: 25px;
