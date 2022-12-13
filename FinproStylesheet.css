@@ -1,0 +1,109 @@
+/* Home Box */
+.image {
+	position: absolute;
+	top: 300px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.widthSet {
+    max-width: 1000px;
+}
+
+.heightSet {
+    max-height: 1000px;
+}
+
+
+
+
+
+
+
+/* -- The Box --*/
+
+.Rectangle {
+	position: absolute;
+	border-radius: 25px;
+	width: 1171px;
+	height: 627px;
+	left: 235px;
+	top: 60px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	background: #02a9f7;
+}
+
+.Rectangle2 {
+	position: absolute;
+	width: 1171px;
+	height: 86px;
+	left: 235px;
+	top: 60px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	background: #606060;
+	border-radius: 25px 25px 0px 0px;
+}
+
+.ElementCenter {
+	margin: 0;
+	margin-left: 20px;
+  	position: absolute;
+  	top: 50%;
+  	transform: translateY(-50%);
+}
+
+.TitleText {
+	color: #d4f0fc;
+	font-weight: bold;
+	font-size: x-large;
+}
+
+.buttonUpper {
+	position: absolute;
+	border-radius: 100px;
+	background-color:#02a9f7;
+	width:25px;
+	height: 25px;
+}
+
+/* -- ButtonDown -- */
+
+.TitleTextButton {
+	color: #d4f0fc;
+	font-weight: bold;
+	font-size: large;
+}
+
+.buttonElement {
+	border-radius: 25px;
+	background: #606060;
+	color: white;
+	font-weight: bold;
+	padding: 10px;
+}
+
+.ButtonProdi {
+    position: fixed; 
+    bottom: 50px; 
+    width: 50%;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+.imgimg2 {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
