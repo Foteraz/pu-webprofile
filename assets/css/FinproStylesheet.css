@@ -1,3 +1,187 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+figure, header, nav, section, article, aside, footer, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+#particles-js {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+  }
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+  .grid:after {
+	content: '';
+	display: block;
+	clear: both;
+  }
+  
+  /* ---- .grid-item ---- */
+  
+  .grid-sizer,
+  .grid-item {
+	width: 50%;
+  }
+  
+  .grid-item {
+	float: left;
+  }
+  
+  .grid-item img {
+	display: block;
+	max-width: 100%;
+  }
+  
+  .clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+  }
+  
+  .clearfix {
+	display: inline-block;
+  }
+  
+  html[xmlns] .clearfix {
+	display: block;
+  }
+  
+  * html .clearfix {
+	height: 1%;
+  } 
+/* -- ContenUI -- */
+.ContentUI  {
+	margin-top: 80px;
+	position: relative;
+}
+
+.ContentUI .Rectangle {
+	position: relative;
+	border-radius: 25px;
+	margin: 0;
+	background-color: #02a9f7;
+}
+
+.ContentUI .Rectangle .Rectangle2 {
+	position: relative;
+	height: 86px;
+	margin-top: 0px;
+	background: #606060;
+	border-radius: 25px 25px 0px 0px;
+}
+
+.ContentUI .Rectangle .Heading {
+	position: absolute;
+	padding-left: 30px;
+	font-weight: bold;
+	color: white;
+	top: 50%;
+  	transform: translateY(-50%);
+}
+
+.ContentUI .Rectangle .Heading {
+	position: absolute;
+	padding-left: 30px;
+	font-weight: bold;
+	color: white;
+	top: 50%;
+  	transform: translateY(-50%);
+}
+
+.ContentUI .Rectangle .menu div{
+	color: white;
+	font-weight: bold;
+  	font-size: 15px;
+	height: 50px;
+  	background-color:#606060;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	text-align: center;
+	padding: 0px 15px;
+	cursor: pointer;
+	line-height: 50px;
+	position: relative;
+	transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.ContentUI .Rectangle .menu div.active,
+.ContentUI .Rectangle .menu div.active .thumb {
+  background-color: #02a9f7;
+  border-radius: 25px 25px 0px 0px;
+}
+
+.ContentUI ul.Rectangle {
+	position: relative;
+	min-height: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  .ContentUI ul.Rectangle li {
+	opacity: 0;
+	transform: translateX(-50px);
+	position: absolute;
+	list-style: none;
+	transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  
+  .ContentUI ul.Rectangle li.active {
+	transition-delay: 0.3s;
+	position: relative;
+	display: block;
+	z-index: 2;
+	opacity: 1;
+	transform: translateX(0px);
+  }
+  
+  .ContentUI ul.Rectangle li {
+	width: 100%;
+	display: none;
+  }
+  
+  .ContentUI .Rectangle .thumb .left-text {
+	margin-left: 30px;
+  }
+  
+  .ContentUI .Rectangle .thumb .left-text h4 {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 35px;
+	margin-bottom: 30px;
+	margin-top: 40px;
+  }
+  
+  .ContentUI .Rectangle .thumb .left-text p {
+	color: #fff;
+	margin-bottom: 30px;
+  }
+
+  .ContentUI .Rectangle .thumb img {
+	border-radius: 7px;
+  }
+
+.ContentUI .Rectangle .Rectangle2 .image {
+	position: absolute;
+	top: 30px;
+	margin-left: 1200px;
+}
+
 /* Home Box */
 .image {
 	position: absolute;
@@ -9,62 +193,23 @@
 }
 
 .widthSet {
-    max-width: 1000px;
+	max-width: 1000px;
 }
 
 .heightSet {
-    max-height: 1000px;
+	max-height: 1000px;
 }
-
-
-
-
 
 
 
 /* -- The Box --*/
 
-.Rectangle {
-	position: absolute;
-	border-radius: 25px;
-	width: 1171px;
-	height: 627px;
-	left: 235px;
-	top: 60px;
-	left: 0;
-	right: 0;
-	margin-left: auto;
-	margin-right: auto;
-	background: #02a9f7;
-	z-index:-2;
-}
-
-.Rectangle2 {
-	position: absolute;
-	width: 1171px;
-	height: 86px;
-	left: 235px;
-	top: 60px;
-	left: 0;
-	right: 0;
-	margin-left: auto;
-	margin-right: auto;
-	background: #606060;
-	border-radius: 25px 25px 0px 0px;
-}
-
 .ElementCenter {
 	margin: 0;
 	margin-left: 20px;
-  	position: absolute;
-  	top: 50%;
-  	transform: translateY(-50%);
-}
-
-.TitleText {
-	color: #d4f0fc;
-	font-weight: bold;
-	font-size: x-large;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .buttonUpper {
@@ -81,175 +226,6 @@
 	padding: 0;
 	overflow: hidden;
 	background-color: rgb(0, 0, 0);
-  }
-
-/*-- text --*/
-#box{
-	margin-bottom:auto; 
-	position : absolute;
-	padding: 100px;
-	background-color: #02a9f7; 
-	color:white;
-	border-radius: 25px;
-	width: 1171px;
-	height: 567px;
-	left: 235px;
-	top: 120px;
-	left: 0;
-	right: 0;
-	margin-left: auto;
-	margin-right: auto;
-	font-size:x-large;
-	z-index: -1;
-}
-
-#box2{
-	margin-bottom:auto; 
-	position : absolute;
-	padding: 100px;
-	background-color: #02a9f7; 
-	color:white;
-	border-radius: 25px;
-	width: 1171px;
-	height: 567px;
-	left: 235px;
-	top: 120px;
-	left: 0;
-	right: 0;
-	margin-left: auto;
-	margin-right: auto;
-	font-size:x-large;
-	z-index: -1;
-}
-
-#box3{
-	margin-bottom:auto; 
-	position : absolute;
-	padding: 100px;
-	background-color: #02a9f7; 
-	color:white;
-	border-radius: 25px;
-	width: 1171px;
-	height: 567px;
-	left: 235px;
-	top: 120px;
-	left: 0;
-	right: 0;
-	margin-left: auto;
-	margin-right: auto;
-	font-size:x-large;
-	z-index: -1;
-}
-#box4{
-	margin-bottom:auto; 
-	position : absolute;
-	padding: 100px;
-	background-color: #02a9f7; 
-	color:white;
-	border-radius: 25px;
-	width: 1171px;
-	height: 567px;
-	left: 235px;
-	top: 120px;
-	left: 0;
-	right: 0;
-	margin-left: auto;
-	margin-right: auto;
-	font-size:x-large;
-	z-index: -1;
-}
-#box5{
-	margin-bottom:auto; 
-	position : absolute;
-	padding: 100px;
-	background-color: #02a9f7; 
-	color:white;
-	border-radius: 25px;
-	width: 1171px;
-	height: 567px;
-	left: 235px;
-	top: 120px;
-	left: 0;
-	right: 0;
-	margin-left: auto;
-	margin-right: auto;
-	font-size:x-large;
-	z-index: -1;
-}
-/* -- Button About -- */
-#button {
-	position : absolute;
-	margin-bottom:auto; 
-	color:white;
-	background-color: #606060;
-	border-radius: 25px;
-	width: 100px;
-	height: 40px;
-	left: 235px;
-	top: 160px;
-	left: 225px;
-	right: 0;
-	z-index: 1;
-}
-
-#button2 {
-	margin-bottom:auto; 
-	position : absolute;
-	color:white;
-	background-color: #606060;
-	border-radius: 25px;
-	width: 200px;
-	height: 40px;
-	left: 235px;
-	top: 160px;
-	left: 350px;
-	right: 0;
-	z-index: 1;
-}
-
-#button3 {
-	margin-bottom:auto; 
-	position : absolute;
-	color:white;
-	background-color: #606060;
-	border-radius: 25px;
-	width: 100px;
-	height: 40px;
-	left: 235px;
-	top: 160px;
-	left: 570px;
-	right: 0;
-	z-index: 1;
-}
-
-#button4 {
-	margin-bottom:auto; 
-	position : absolute;
-	color:white;
-	background-color: #606060;
-	border-radius: 25px;
-	width: 100px;
-	height: 40px;
-	left: 235px;
-	top: 160px;
-	left: 700px;
-	right: 0;
-	z-index: 1;
-}
-
-#button5 {
-	margin-bottom:auto; 
-	position : absolute;
-	color:white;
-	background-color: #606060;
-	border-radius: 25px;
-	width: 100px;
-	height: 40px;
-	left: 235px;
-	top: 160px;
-	left: 830px;
-	right: 0;
-	z-index: 1;
 }
 /* -- ButtonDown -- */
 
@@ -265,12 +241,14 @@
 	color: white;
 	font-weight: bold;
 	padding: 10px;
+	z-index: 5;
 }
 
 .ButtonProdi {
     position: fixed; 
     bottom: 50px; 
     width: 50%;
+	z-index: 2;
 }
 
 a {
@@ -283,4 +261,11 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+/* -- Responsive -- */
+@media (max-width: 1200px) {
+	.ContentUI .Rectangle {
+		position: relative;
+	}
 }

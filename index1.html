@@ -4,144 +4,202 @@
       <meta charset="utf-8">
       <meta content="width=device-width, initial-scale=1.0" name="viewport">
       <title>Faculty of Computing</title>
-        <script src="FinproJS.js"></script>
-        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-        <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <link href="FinproStylesheet.css" rel="stylesheet">
-        <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+      <!-- CSS only -->
+      <link href="package/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="assets/css/FinproStylesheet.css" rel="stylesheet">
+      <link href="assets/css/animated.css" rel="stylesheet">
+
     </head>
     <body class="body" style="background-color: black;">
-      <div class="count-particles">
-        <span class="js-count-particles">--</span> particles
-      </div>
-      
-      <!-- particles.js container -->
       <div id="particles-js"></div>
-      
-      <!-- scripts -->
-      <script src="../particles.js"></script>
-      <script src="js/app.js"></script>
-      <script>
-        $(document).ready(function(){
-               $("#button").click(function(){
-                   $("#box").slideToggle(1000);
-           });
-       });
 
-       $(document).ready(function(){
-               $("#button2").click(function(){
-                   $("#box2").slideToggle(1000);
-           });
-       });
-
-       $(document).ready(function(){
-               $("#button3").click(function(){
-                   $("#box3").slideToggle(1000);
-           });
-       });
-
-       $(document).ready(function(){
-               $("#button4").click(function(){
-                   $("#box4").slideToggle(1000);
-           });
-       });
-
-       $(document).ready(function(){
-               $("#button5").click(function(){
-                   $("#box5").slideToggle(1000);
-           });
-       });
-     </script>
-      
-        <div class="test">
-            <div class="HomeUI">
-
+  <div class="ContentUI">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="Rectangle">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="Rectangle2">
+                  <div class="Heading">
+                    <h2>Information System</h2>
+                  </div>
+                  <div class="image">
+                    <a href="home.html"><img src="assets/image/switchicon.png" width="30px"></a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="ContentUI">
-              <!--button Faculty-->
-              <button id="button">Overview</button>
-              <div id="box">
-                <p>About the Study Program</p>
-                <p>Information System Study Program has strong connections with information science, computer science, business, and technology as well as with project management. Bachelor in Information Systems cover topics such as: programming, databases, computer network, business process analysis, information system project management, accounting, enterprise resource planning, enterprise system, information system analysis and design, testing and implementation, e-commerce, e-business software technologies, web, and interactive media design.</p>
-                </div>
-                <button id="button2">Future Field & Carrier</button>
-                <div id="box2">
-                  <li>CIO (Chief Information Officer)</li>
-                  <li>Database Administrator</li>
-                  <li>System Analyst</li>
-                  <li>Information System Project Manager</li>
-                  <li>Information System Auditor</li>
-                  <li>Network Designer</li>
-                </div>
-                <button id="button3">Lectures</button>
-                <div id="box3">
-                  <ul>
-                  <li>Ronny Juwono, S.Pd., M.T. (Head of Study Program)</li>
-                  <li>Rikip Ginanjar, M.Sc.</li>
-                  <li>Sandy Darmowinoto, B.Sc.(Hons), M.IT.</li>
-                  <li>Cindy K. Himawan, S.T., M.T. (SAP SCM Certified)</li>
-                  <li>Dr. Budi Sulistyo</li>
-                  <li>Dr. Eko Syamsuddin Hasrito, M.Eng.</li>
-                  <li>Dr. Yuyu Wahyu</li>
-                  <li>Rosalina, S.Kom., M.Kom.</li>
-                  <li>Sasongko Budhi Wardhana, ST., M.Kom.</li>
-                  <li>Abdul Ghofir, S.Kom., M.Kom.</li>
-                  <li>Nandia Primasari, M.Sc.</li>
-                </ul>
-                </div>
-                <button id="button4">Vision</button>
-                <div id="box4">
-                <p>In the year 2022 to become the center of education and development of science and technology of information systems that excel in Indonesia, able to compete globally, and play an active role in supporting the industry.</p>
-                </div>
-                <button id="button5">Mission</button>
-                <div id="box5">
-                  <li>Organizing education and teaching in the field of science and technology of information systems, especially in enterprise-level, which are of high quality.</li>
-                  <li>Conducting research and development in the field of science and technology of information systems, especially in the level of the enterprise, that supports the needs of the industry with high quality</li>
-                  <li>Carrying out community service and empowerment activities related to the field of information systems, especially at the enterprise level.</li>
-                  <li>Cooperating with industries, companies, government, and other institutions in the field of information systems, especially at the enterprise level.</li>
-                </div>
-                <div>
-                    <div class="Rectangle">
+            <div class="menu">
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="first-thumb active">
+                    <div class="thumb">
+                      Overview
                     </div>
-                    <div class="Rectangle2">
-                      <span class="ElementCenter TitleText"> Information System </span>
-                      <div class="buttonUpper ElementCenter" style="right:120px">
-                        <img src="switchicon.png" width="20" class="imgimg2"></div>
-                        <div class="buttonUpper ElementCenter" style="right:85px">
-                          <img src="switchicon.png" width="20" class="imgimg2"></div>
-                        <div class="buttonUpper ElementCenter" style="right:50px">
-                          <img src="switchicon.png" width="20" class="imgimg2">
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="thumb">
+                      Future Field & Career
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="thumb">
+                      Lecturer
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="thumb">
+                      Vision
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                  <div class="last-thumb">
+                    <div class="thumb">
+                     Mission
+                    </div>
+                  </div>
+                </div>
+              </div>                
+            </div>
+            <div class="col-lg-12">
+              <ul class="Rectangle">
+                <li class="active">
+                  <div>
+                    <div class="thumb">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="left-text">
+                            <h4>About the Study Program</h4>
+                            <p>Information System Study Program has strong connections with information science, computer science, business, and technology as well as with project management. Bachelor in Information Systems cover topics such as: programming, databases, computer network, business process analysis, information system project management, accounting, enterprise resource planning, enterprise system, information system analysis and design, testing and implementation, e-commerce, e-business software technologies, web, and interactive media design.</p>
+                          </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ButtonProdi w-100 text-center m-0">
-                <div class="container float-none w-auto">
-                    <div class="row">
-                      <div class="col-sm mx-3 align-middle buttonElement">
-                        <a href="index.html"><span class="TitleTextButton">CIT Program</span></a>
-                      </div>
-                      <div class="col-sm w-25 mx-3 align-middle buttonElement">
-                        <a href="index1.html"><span class="TitleTextButton">CIS Program</span></a>
-                      </div>
-                      <div class="col-sm w-25 mx-3 align-middle buttonElement">
-                        <a href="index2.html"><span class="TitleTextButton">VCD Program</span></a>
-                      </div>
-                      <div class="col-sm w-25 mx-3 align-middle buttonElement">
-                        <a href="index3.html"><span class="TitleTextButton">IDE Program</span></a>
-                      </div>
-                      <div class="col-sm w-25 mx-3 align-middle buttonElement">
-                        <a href="index4.html"><span class="TitleTextButton">Event</span></a>
-                      </div>
-                      <div class="col-sm w-25 mx-3 align-middle buttonElement">
-                        <a href="index5.html"><span class="TitleTextButton">About</span></a>
                       </div>
                     </div>
                   </div>
+                </li>
+                <li>
+                  <div>
+                    <div class="thumb">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="left-text">
+                            <h4>CIO (Chief Information Officer)</h4>
+                            <h4>Dabase Administrator</h4>
+                            <h4>System Analyst</h4>
+                            <h4>Infation System Project Manager</h4>
+                            <h4>Infation System Auditor</h4>
+                            <h4>Network Designer</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <div class="thumb">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="left-text">
+                            <h4>Ronny Juwono, S.Pd., M.T. (Head of Study Program)</h4>
+                            <h4>Rikip Ginanjar, M.Sc.</h4>
+                            <h4>Sandy Darmowinoto, B.Sc.(Hons), M.IT.</h4>
+                            <h4>Cindy K. Himawan, S.T., M.T. (SAP SCM Certified)</h4>
+                            <h4>Dr. Budi Sulistyo</h4>
+                            <h4>Dr. Eko Syamsuddin Hasrito, M.Eng.</h4>
+                            <h4>Dr. Yuyu Wahyu</h4>
+                            <h4>Rosalina, S.Kom., M.Kom.</h4>
+                            <h4>Sasongko Budhi Wardhana, ST., M.Kom.</h4>
+                            <h4>Abdul Ghofir, S.Kom., M.Kom.</h4>
+                            <h4>Nandia Primasari, M.Sc.</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <div class="thumb">
+                      <div class="row">
+                        <div class="col-lg-5">
+                          <div class="left-text">
+                            <h4>Vision</h4>
+                            <p>In the year 2022 to become the center of education and development of science and technology of information systems that excel in Indonesia, able to compete globally, and play an active role in supporting the industry.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <div class="thumb">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="left-text">
+                            <h4>Mission</h4>
+                            <p>Organizing education and teaching in the field of science and technology of information systems, especially in enterprise-level, which are of high quality.</p>
+                            <p>Conducting research and development in the field of science and technology of information systems, especially in the level of the enterprise, that supports the needs of the industry with high quality</p>
+                            <p>Carrying out community service and empowerment activities related to the field of information systems, especially at the enterprise level.</p>
+                            <p>Cooperating with industries, companies, government, and other institutions in the field of information systems, especially at the enterprise level.</p>
+                            <p>Organizing education and teaching in the field of science and technology of information systems, especially in enterprise-level, which are of high quality.</p>
+                            <p>Conducting research and development in the field of science and technology of information systems, especially in the level of the enterprise, that supports the needs of the industry with high quality</p>
+                            <p>Carrying out community service and empowerment activities related to the field of information systems, especially at the enterprise level.</p>
+                            <p>Cooperating with industries, companies, government, and other institutions in the field of information systems, especially at the enterprise level.</p></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
-    </body>
-</html>
+      </div>
+    </div>
+  </div>
+          </div> 
+          </div>
+            <div class="ButtonProdi w-100 text-center m-0">
+              <div class="container float-none w-auto">
+                <div class="row">
+                  <div class="col-sm mx-3 align-middle buttonElement">
+                    <a href="index.html"><span class="TitleTextButton">CIT Program</span></a>
+                  </div>
+                  <div class="col-sm w-25 mx-3 align-middle buttonElement">
+                    <a href="index1.html"><span class="TitleTextButton">CIS Program</span></a>
+                  </div>
+                  <div class="col-sm w-25 mx-3 align-middle buttonElement">
+                    <a href="index2.html"><span class="TitleTextButton">VCD Program</span></a>
+                  </div>
+                  <div class="col-sm w-25 mx-3 align-middle buttonElement">
+                    <a href="index3.html"><span class="TitleTextButton">IDE Program</span></a>
+                  </div>
+                  <div class="col-sm w-25 mx-3 align-middle buttonElement">
+                    <a href="index4.html"><span class="TitleTextButton">Event</span></a>
+                  </div>
+                  <div class="col-sm w-25 mx-3 align-middle buttonElement">
+                    <a href="index5.html"><span class="TitleTextButton">About</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          <!-- Scripts -->
+          <script src="package/jquery/jquery-3.6.1.min.js"></script>
+          <script src="package/bootstrap/js/bootstrap.bundle.min.js"></script>
+          <script src="assets/js/particles.js"></script>
+          <script src="assets/js/app.js"></script>
+          <script src="assets/js/tabs.js"></script>
+          <script src="assets/js/isotope.js"></script>
+          <script src="assets/js/owl-carousel.js"></script>
+          <script src="assets/js/imagesloaded.js"></script>
+          <script src="assets/js/tabs.js"></script>
+          <script src="assets/js/FinproJS.js"></script>
+          
+        </body>
+            </html>
