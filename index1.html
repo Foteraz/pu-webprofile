@@ -2,168 +2,107 @@
 <html>
     <head>
       <meta charset="utf-8">
-      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Faculty of Computing</title>
 
       <!-- CSS only -->
-      <link href="package/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-      <link href="assets/css/FinproStylesheet.css" rel="stylesheet">
+      <link href="assets/css/bootstrap.min.css" rel="stylesheet">
       <link href="assets/css/animated.css" rel="stylesheet">
-
+      <link href="package/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+      <link href="assets/css/FinproStylesheet.css" rel="stylesheet">
     </head>
+
     <body class="body" style="background-color: black;">
+
       <div id="particles-js"></div>
 
-  <div class="ContentUI">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="Rectangle">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="Rectangle2">
-                  <div class="Heading">
-                    <h2>Information System</h2>
+      <div class="ContentUI">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="Rectangle">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="Rectangle2">
+                      <div class="Heading">
+                        <h2>Information System</h2>
+                      </div>
+                      <div class="image">
+                        <a href="home.html"><img src="assets/image/switchicon.png" width="30px"></a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="image">
-                    <a href="home.html"><img src="assets/image/switchicon.png" width="30px"></a>
+                </div>
+                <div class="menu">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <nav class="navstyles">
+                        <div class="nav nav-justified nav-tabs" id="nav-tab" role="tablist">
+                          <button class="nav-link rounded-0 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Overview</button>
+                          <button class="nav-link rounded-0 " id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Future Field & Carrier</button>
+                          <button class="nav-link rounded-0 " id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Lectrures</button>
+                          <button class="nav-link rounded-0 " id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false">Vision & Mission</button>
+                        </div>
+                      </nav>
+                      <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active rounded-4" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">                            
+                          <h4>About the Study Program</h4>
+                          <p>Information System Study Program has strong connections with information science, computer science, business, and technology as well as with project management. Bachelor in Information Systems cover topics such as: programming, databases, computer network, business process analysis, information system project management, accounting, enterprise resource planning, enterprise system, information system analysis and design, testing and implementation, e-commerce, e-business software technologies, web, and interactive media design.</p>
+                        </div>
+                        <div class="tab-pane fade rounded-4" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                          <ul>
+                            <li>CIO (Chief Information Officer)</li>
+                            <li>Dabase Administrator</li>
+                            <li>System Analyst</li>
+                            <li>Infation System Project Manager</li>
+                            <li>Infation System Auditor</li>
+                            <li>Network Designer</li>                            
+                        </ul>
+                        </div>
+                        <div class="tab-pane fade rounded-4" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                          <button class="accordion">Ronny Juwono, S.Pd., M.T. (Head of Study Program)</button>
+                            <div class="panel"> 
+                              <p>Ronny Juwono is the head of the Information Systems Study Program and an experienced lecturer with Information System Design and Analysis and E-Learning Technology expertise.</p>
+                            </div>
+                          <button class="accordion">Rikip Ginanjar, M.Sc.</button>
+                            <div class="panel">  
+                              <p>Ronny Juwono is the head of the Information Systems Study Program and an experienced lecturer with Information System Design and Analysis and E-Learning Technology expertise.</p>
+                            </div>
+                          <button class="accordion">Sandy Darmowinoto, B.Sc.(Hons), M.IT.</button>
+                            <div class="panel">  
+                              <p>Ronny Juwono is the head of the Information Systems Study Program and an experienced lecturer with Information System Design and Analysis and E-Learning Technology expertise.</p>
+                            </div>
+                          <button class="accordion">Cindy K. Himawan, S.T., M.T. (SAP SCM Certified)</button>
+                            <div class="panel">  
+                              <p>-</p>
+                            </div>
+                        </div>   
+                          <div class="tab-pane fade rounded-4" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">
+                            <button class="accordion">Vision</button>
+                            <div class="panel">
+                              <p>In the year 2022 to become the center of education and development of science and technology of information systems that excel in Indonesia, able to compete globally, and play an active role in supporting the industry.</p>
+                            </div>
+                             <button class="accordion">Mission </button>
+                            <div class="panel">
+                              <p>Organizing education and teaching in the field of science and technology of information systems, especially in enterprise-level, which are of high quality.</p>
+                              <p>Conducting research and development in the field of science and technology of information systems, especially in the level of the enterprise, that supports the needs of the industry with high quality</p>
+                              <p>Carrying out community service and empowerment activities related to the field of information systems, especially at the enterprise level.</p>
+                              <p>Cooperating with industries, companies, government, and other institutions in the field of information systems, especially at the enterprise level.</p>
+                              <p>Organizing education and teaching in the field of science and technology of information systems, especially in enterprise-level, which are of high quality.</p>
+                              <p>Conducting research and development in the field of science and technology of information systems, especially in the level of the enterprise, that supports the needs of the industry with high quality</p>
+                              <p>Carrying out community service and empowerment activities related to the field of information systems, especially at the enterprise level.</p>
+                              <p>Cooperating with industries, companies, government, and other institutions in the field of information systems, especially at the enterprise level.</p>
+                            </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="menu">
-              <div class="row">
-                <div class="col-sm-3">
-                  <div class="first-thumb active">
-                    <div class="thumb">
-                      Overview
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="thumb">
-                      Future Field & Career
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                    <div class="thumb">
-                      Lecturer
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                    <div class="thumb">
-                      Vision
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                  <div class="last-thumb">
-                    <div class="thumb">
-                     Mission
-                    </div>
-                  </div>
-                </div>
-              </div>                
-            </div>
-            <div class="col-lg-12">
-              <ul class="Rectangle">
-                <li class="active">
-                  <div>
-                    <div class="thumb">
-                      <div class="row">
-                        <div class="col-lg-12">
-                          <div class="left-text">
-                            <h4>About the Study Program</h4>
-                            <p>Information System Study Program has strong connections with information science, computer science, business, and technology as well as with project management. Bachelor in Information Systems cover topics such as: programming, databases, computer network, business process analysis, information system project management, accounting, enterprise resource planning, enterprise system, information system analysis and design, testing and implementation, e-commerce, e-business software technologies, web, and interactive media design.</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <div class="thumb">
-                      <div class="row">
-                        <div class="col-lg-12">
-                          <div class="left-text">
-                            <h4>CIO (Chief Information Officer)</h4>
-                            <h4>Dabase Administrator</h4>
-                            <h4>System Analyst</h4>
-                            <h4>Infation System Project Manager</h4>
-                            <h4>Infation System Auditor</h4>
-                            <h4>Network Designer</h4>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <div class="thumb">
-                      <div class="row">
-                        <div class="col-lg-12">
-                          <div class="left-text">
-                            <h4>Ronny Juwono, S.Pd., M.T. (Head of Study Program)</h4>
-                            <h4>Rikip Ginanjar, M.Sc.</h4>
-                            <h4>Sandy Darmowinoto, B.Sc.(Hons), M.IT.</h4>
-                            <h4>Cindy K. Himawan, S.T., M.T. (SAP SCM Certified)</h4>
-                            <h4>Dr. Budi Sulistyo</h4>
-                            <h4>Dr. Eko Syamsuddin Hasrito, M.Eng.</h4>
-                            <h4>Dr. Yuyu Wahyu</h4>
-                            <h4>Rosalina, S.Kom., M.Kom.</h4>
-                            <h4>Sasongko Budhi Wardhana, ST., M.Kom.</h4>
-                            <h4>Abdul Ghofir, S.Kom., M.Kom.</h4>
-                            <h4>Nandia Primasari, M.Sc.</h4>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <div class="thumb">
-                      <div class="row">
-                        <div class="col-lg-5">
-                          <div class="left-text">
-                            <h4>Vision</h4>
-                            <p>In the year 2022 to become the center of education and development of science and technology of information systems that excel in Indonesia, able to compete globally, and play an active role in supporting the industry.</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <div class="thumb">
-                      <div class="row">
-                        <div class="col-lg-12">
-                          <div class="left-text">
-                            <h4>Mission</h4>
-                            <p>Organizing education and teaching in the field of science and technology of information systems, especially in enterprise-level, which are of high quality.</p>
-                            <p>Conducting research and development in the field of science and technology of information systems, especially in the level of the enterprise, that supports the needs of the industry with high quality</p>
-                            <p>Carrying out community service and empowerment activities related to the field of information systems, especially at the enterprise level.</p>
-                            <p>Cooperating with industries, companies, government, and other institutions in the field of information systems, especially at the enterprise level.</p>
-                            <p>Organizing education and teaching in the field of science and technology of information systems, especially in enterprise-level, which are of high quality.</p>
-                            <p>Conducting research and development in the field of science and technology of information systems, especially in the level of the enterprise, that supports the needs of the industry with high quality</p>
-                            <p>Carrying out community service and empowerment activities related to the field of information systems, especially at the enterprise level.</p>
-                            <p>Cooperating with industries, companies, government, and other institutions in the field of information systems, especially at the enterprise level.</p></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-          </div> 
-          </div>
+
             <div class="ButtonProdi w-100 text-center m-0">
               <div class="container float-none w-auto">
                 <div class="row">
@@ -193,13 +132,12 @@
           <script src="package/jquery/jquery-3.6.1.min.js"></script>
           <script src="package/bootstrap/js/bootstrap.bundle.min.js"></script>
           <script src="assets/js/particles.js"></script>
+          <script src="package/jquery-ui/jquery-ui.min.js"></script>
           <script src="assets/js/app.js"></script>
-          <script src="assets/js/tabs.js"></script>
           <script src="assets/js/isotope.js"></script>
           <script src="assets/js/owl-carousel.js"></script>
           <script src="assets/js/imagesloaded.js"></script>
-          <script src="assets/js/tabs.js"></script>
-          <script src="assets/js/FinproJS.js"></script>
+          <script src="assets/js/custom.js"></script>
           
-        </body>
-            </html>
+  </body>
+</html>

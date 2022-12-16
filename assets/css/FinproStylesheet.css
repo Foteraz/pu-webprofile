@@ -8,6 +8,11 @@ figure, header, nav, section, article, aside, footer, figcaption {
   outline: 0;
 }
 
+:root{
+	--nav-tabs-border-width: 25px;
+	--nav-tabs-border-radius: 0px 0px 25px 25px;
+}
+
 #particles-js {
 	position: absolute;
 	width: 100%;
@@ -65,13 +70,17 @@ a {
 .ContentUI  {
 	margin-top: 80px;
 	position: relative;
+	margin-bottom: 100px;
 }
 
 .ContentUI .Rectangle {
 	position: relative;
-	border-radius: 25px;
+	border-radius: 25px !important;
 	margin: 0;
 	background-color: #02a9f7;
+}
+.Rectangles {
+	border-radius: 25px;
 }
 
 .ContentUI .Rectangle .Rectangle2 {
@@ -99,23 +108,44 @@ a {
 	top: 50%;
   	transform: translateY(-50%);
 }
-
-.ContentUI .Rectangle .menu div{
+.ContentUI .Rectangle .menu .navstyles button {
+	background-color:#606060;
 	color: white;
-	font-weight: bold;
-  	font-size: 15px;
-	height: 50px;
-  	background-color:#606060;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 0px;
-	text-align: center;
-	padding: 0px 0px;
-	line-height: 50px;
-	cursor: pointer;
-	position: relative;
-	transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+	font-size: large;
 }
+
+.ContentUI .Rectangle .menu h4,p,ul{
+	color: white;
+	margin-bottom: 30px;
+	padding-left: 30px;
+}
+
+.ContentUI .Rectangle .menu h4 {
+	margin-top: 30px;
+}
+
+.ContentUI .Rectangle .menu li {
+	margin-bottom: 30px;
+	margin-left: 30px;
+	font-size: larger; 
+}
+
+.ContentUI .Rectangle .menu li:first-child {
+	margin-top: 30px;
+}
+
+.ContentUI .Rectangle .menu .accordion{
+	background-color: #02a9f7;
+	color: white;
+	font-size: large;
+	font-weight: bold;
+}
+
+.ContentUI .Rectangle .menu .panel p{
+	margin-top: 30px;
+	color: #02a9f7;
+}
+
 
 .ContentUI .Rectangle .menu div.active,
 .ContentUI .Rectangle .menu div.active .thumb {
@@ -123,67 +153,16 @@ a {
   border-radius: 25px 25px 0px 0px;
 }
 
-.ContentUI ul.Rectangles {
-	position: relative;
-	min-height: 100%;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
-  }
-
-  .ContentUI ul.Rectangles li {
-	opacity: 0;
-	transform: translateX(-50px);
-	position: absolute;
-	list-style: none;
-	transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
-  }
-  
-  .ContentUI ul.Rectangles li.active {
-	transition-delay: 0.3s;
-	position: relative;
-	display: block;
-	z-index: 2;
-	opacity: 1;
-	transform: translateX(0px);
-  }
-  
-  .ContentUI ul.Rectangles li {
-	width: 100%;
-	display: none;
-  }
-  
-  .ContentUI .Rectangles .thumb .left-text {
-	margin-left: 30px;
-  }
-  
-  .ContentUI .Rectangles .thumb .left-text h4 {
-	color: #fff;
-	font-size: 20px;
-	font-weight: 700;
-	line-height: 35px;
-	margin-bottom: 30px;
-	margin-top: 40px;
-  }
-  
-  .ContentUI .Rectangles .thumb .left-text p {
-	color: #fff;
-	margin-bottom: 30px;
-  }
-
-  .ContentUI .Rectangles .thumb img {
+  .ContentUI .Rectangle .thumb img {
 	border-radius: 7px;
   }
 
-  .ContentUI .Rectangle .Rectangle2 .image {
+.ContentUI .Rectangle .Rectangle2 .image {
 	position: absolute;
 	top: 30px;
 	margin-left: 1200px;
- } 
+}
 
-
- 
 /* Home Box */
 .image {
 	position: absolute;
@@ -201,10 +180,66 @@ a {
 .heightSet {
 	max-height: 1000px;
 }
+/* tab NavBar */
+ /* Change background color of buttons on hover */
+ .ContentUI .Rectangle .tab{
+	margin: 0;
+  }
 
-
-
-/* -- The Box --*/
+.ContentUI .Rectangle .tab button:hover {
+	background-color: #02a9f7;
+  }
+  
+  /* Create an active/current tablink class */
+.ContentUI .Rectangle .tab button.active {
+	background-color: #02a9f7;
+  	border-radius: 25px 25px 0px 0px;
+  }
+  
+  /* Style the tab content */
+  .ContentUI .Rectangle  .tabcontent {
+	background-color: #02a9f7;
+	display: none;
+	padding: 6px 12px;
+  }
+/* accordion  slide down */
+.ContentUI .Rectangle .accordion {
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	transition: 0.4s;
+  }
+  
+  .ContentUI .Rectangle .active, .accordion:hover {
+	background-color: #ccc;
+  }
+  
+  .ContentUI .Rectangle  .accordion:after {
+	content: '\002B';
+	color: #02a9f7;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+  }
+  
+  .ContentUI .Rectangle .active:after {
+	content: "\2212";
+  }
+  
+  .ContentUI .Rectangle .panel {
+	padding: 0 18px;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+  }
+  /* -- The Box --*/
 
 .buttonUpper {
 	position: absolute;
@@ -256,6 +291,7 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 
 /* -- Responsive -- */
 @media (max-width: 1200px) {
