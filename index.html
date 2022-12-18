@@ -2,169 +2,136 @@
 <html>
     <head>
       <meta charset="utf-8">
-      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Faculty of Computing</title>
 
       <!-- CSS only -->
-      <link href="package/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-      <link href="assets/css/FinproStylesheet.css" rel="stylesheet">
+      <link href="assets/css/bootstrap.min.css" rel="stylesheet">
       <link href="assets/css/animated.css" rel="stylesheet">
-
+      <link href="package/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+      <link href="assets/css/FinproStylesheet.css" rel="stylesheet">
     </head>
+
     <body class="body" style="background-color: black;">
+
       <div id="particles-js"></div>
 
-  <div class="ContentUI">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="Rectangle">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="Rectangle2">
-                  <div class="Heading">
-                    <h2>Information Technology</h2>
+      <div class="ContentUI">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="Rectangle">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="Rectangle2">
+                      <div class="Heading">
+                        <h2>Information Technology</h2>
+                      </div>
+                      <div class="image">
+                        <a href="home.html"><img src="assets/image/switchicon.png" width="30px"></a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="image">
-                    <a href="home.html"><img src="assets/image/switchicon.png" width="30px"></a>
+                </div>
+                <div class="menu">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <nav class="navstyles">
+                        <div class="nav nav-justified nav-tabs" id="nav-tab" role="tablist">
+                          <button class="nav-link rounded-0 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Overview</button>
+                          <button class="nav-link rounded-0 " id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Future Field & Carrier</button>
+                          <button class="nav-link rounded-0 " id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Lectrures</button>
+                          <button class="nav-link rounded-0 " id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false">Vision & Mission</button>
+                        </div>
+                      </nav>
+                      <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active rounded-4" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">                            
+                          <h4>About the Study Program</h4>
+                          <p>Information Technology are concerned with issues related to advocating for users and meeting their needs within an organizational and societal context through the selection, creation, application, integration, and administration of computing technologies, including the installation of networks; network administration and security; the design of web pages; the development of multimedia resources; the installation of communication components; the oversight of e-mail systems; and the planning and management of the technology lifecycle by which an organization’s technology is maintained, upgraded, and replaced.</p>
+                        </div>
+                        <div class="tab-pane fade rounded-4" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                          <ul>
+                          <li>Programmer</li>
+                          <li> System Analyst</li>
+                          <li>IT Consultant</li>
+                          <li>Software Engineer</li>
+                          <li>Database Engineer</li>
+                          <li>Software Developer</li>
+                          <li> Web Designer</li>
+                        </ul>
+                        </div>
+                        <div class="tab-pane fade rounded-4" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                          <button class="accordion">Drs. Nur Hadisukmana, M.Sc. (Head of Study Programme)</button>
+                            <div class="panel"> 
+                              <img src="itlectures/Drs-18024. Nur Hadisukmana, M. Nur Hadisukmana, M.jpg">
+                              <p>Nur Hadisukmana is serving as Head of IT Study Program and actively teaching as a lecturer with interest in the algorithm, system analyst, and cryptography.</p>
+                            </div>
+                              <button class="accordion">Ir. Rila Mandala, M.Eng., Ph.D. (Dean School of Computing)</button>
+                                <div class="panel">  
+                                  <img src="itlectures/rilamandala-d48f6.jpg">
+                            </div>
+                              <button class="accordion">Dr. Tjong Wan Sen, S. T., M. T.</button>
+                              <div class="panel">  
+                                <img src="itlectures/Dr-6a0e0. Tjong Wan Sen, S. Tjong Wan Sen, S.jpg">
+                                <p>Tjong Wan Sen is an active lecturer at President University Information Technology Study Program with expertise in Artificial Intelligence, Big Data, and Computer Vision.</p>
+                              </div>
+                                <button class="accordion">Rusdianto Roestam, M.Sc, Ph.D.</button>
+                               <div class="panel">  
+                                <img src="itlectures/Pas Foto 2019-0f354.jpg">
+                                <p>Rusdianto Roestam has been actively teaching at President University as a lecturer in the Information Technology Study Program with expertise in Computer Network Application and Internet of Things.</p>
+                              </div>
+                                <button class="accordion">Dr. Budi Sulistyo</button>
+                               <div class="panel">   
+                                <img src="itlectures/Budi Sulistyo (1)-66f78.jpeg">
+                              </div>
+                                <button class="accordion">Dr. Eko Syamsuddin Hasrito, M.Eng.</button>
+                               <div class="panel">  
+                                <img src="itlectures/WhatsApp Image 2021-01-25 at 09-b875a.jpg">
+                              </div>
+                                <button class="accordion">Dr. Yuyu Wahyu</button>
+                               <div class="panel">   
+                                <img src="itlectures/Yuyu Wahyu-3343f.jpeg">
+                              </div>
+                                <button class="accordion">Rosalina, S.Kom., M.Kom.</button>
+                               <div class="panel"> 
+                                <img src="itlectures/Rosalina, S-3950c.jpg">
+                                <p>Rosalina is a lecturer in Information Technology Study Program. She received both her bachelor's degree and master's degree in Information Technology from President University, Indonesia. In 2008, The Ministry of Research, Technology of the Republic of Indonesia, awarded her the 2nd place of the Open Source Software Innovation Competition. She is an active lecturer with expertise in Matrix and Vector and Visual Programming.</p>
+                              </div>
+                                <button class="accordion">Sasongko Budhi Wardhana, ST., M.Kom.</button>
+                               <div class="panel">
+                              </div>
+                                <button class="accordion">Abdul Ghofir, S.Kom., M.Kom.</button>
+                               <div class="panel"> 
+                                <img src="itlectures/Abdul Ghofir, S-fef48.jpg" >
+                                <p>Abdul Ghofir is an experienced lecturer who teaches in the Information Technology Study Program at President University. He focuses his study on hardware and networking.</p> 
+                               </div>
+                              <button class="accordion">Nandia Primasari M.Sc</button>
+                               <div class="panel">
+                              </div>
+                            </div>
+                          <div class="tab-pane fade rounded-4" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">
+                            <button class="accordion">Vision</button>
+                            <div class="panel">
+                              <p>In 2022, becoming a leading center of education and advancement for science and information technology in Indonesia, which focuses on mobile and IoT application development, and becoming globally competitive, as well as be active in supporting industry and entrepreneurship.</p>
+                            </div>
+                             <button class="accordion">Mission </button>
+                            <div class="panel">
+                              <p>To perform high-quality education and teaching in science and information technology that focuses on mobile and IoT application development.</p>
+                              <p>To carry out research and improvement in science and information technology that focuses on mobile and IoT application development.</p>
+                              <p>To carry out social service and empowerment in the field of information technology.</p>
+                              <p>To cooperate with industries, companies, government, and other institutions in the field of information technology.</p>
+                              <p>To promote the spirit of entrepreneurship for students focusing on technopreneurship.</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="menu">
-              <div class="grid">
-                <div class="row">
-                  <div class="col-sm-3">
-                    <div class="first-thumb active">
-                      <div class="thumb">
-                        Overview
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-3">
-                      <div class="thumb">
-                        Future Field & Career
-                      </div>
-                  </div>
-                  <div class="col-sm-2">
-                      <div class="thumb">
-                        Lecturer
-                      </div>
-                  </div>
-                  <div class="col-sm-2">
-                      <div class="thumb">
-                        Vision
-                      </div>
-                  </div>
-                  <div class="col-sm-2">
-                    <div class="last-thumb">
-                      <div class="thumb">
-                       Mission
-                      </div>
-                    </div>
-                  </div>
-                </div>                
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <ul class="Rectangles">
-                <li class="active">
-                  <div>
-                    <div class="thumb">
-                      <div class="row">
-                        <div class="col-lg-12">
-                          <div class="left-text">
-                            <h4>About the Study Program</h4>
-                            <p>Information Technology are concerned with issues related to advocating for users and meeting their needs within an organizational and societal context through the selection, creation, application, integration, and administration of computing technologies, including the installation of networks; network administration and security; the design of web pages; the development of multimedia resources; the installation of communication components; the oversight of e-mail systems; and the planning and management of the technology lifecycle by which an organization’s technology is maintained, upgraded, and replaced.
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <div class="thumb">
-                      <div class="row">
-                        <div class="col-lg-12">
-                          <div class="left-text">
-                            <h4>Programmer</h4>
-                            <h4>System Analyst</h4>
-                            <h4>IT Consultant</h4>
-                            <h4>Software Engineer</h4>
-                            <h4>Database Engineer</h4>
-                            <h4>Software Developer</h4>
-                            <h4> Web Designer</h4>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <div class="thumb">
-                      <div class="row">
-                        <div class="col-lg-12">
-                          <div class="left-text">
-                            <h4>Ir. Rila Mandala, M.Eng., Ph.D. (Dean School of Computing)</h4>
-                            <h4>Drs. Nur Hadisukmana, M.Sc. (Head of Study Programme)</h4>
-                            <h4>Dr. Tjong Wan Sen, S. T., M. T.</h4>
-                            <h4>Rusdianto Roestam, M.Sc, Ph.D.</h4>
-                            <h4>Dr. Budi Sulistyo</h4>
-                            <h4>Dr. Eko Syamsuddin Hasrito, M.Eng.</h4>
-                            <h4>Dr. Yuyu Wahyu</h4>
-                            <h4>Rosalina, S.Kom., M.Kom.</h4>
-                            <h4>Sasongko Budhi Wardhana, ST., M.Kom.</h4>
-                            <h4>Abdul Ghofir, S.Kom., M.Kom.</h4>
-                            <h4>Nandia Primasari, M.Sc.</h4>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <div class="thumb">
-                      <div class="row">
-                        <div class="col-lg-12">
-                          <div class="left-text">
-                            <h4>Vision</h4>
-                            <p>In 2022, becoming a leading center of education and advancement for science and information technology in Indonesia, which focuses on mobile and IoT application development, and becoming globally competitive, as well as be active in supporting industry and entrepreneurship.</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <div class="thumb">
-                      <div class="row">
-                        <div class="col-lg-12">
-                          <div class="left-text">
-                            <h4>Mission</h4>
-                            <p>To perform high-quality education and teaching in science and information technology that focuses on mobile and IoT application development.</p>
-                            <p>To carry out research and improvement in science and information technology that focuses on mobile and IoT application development.</p>
-                            <p>To carry out social service and empowerment in the field of information technology.</p>
-                            <p>To cooperate with industries, companies, government, and other institutions in the field of information technology.</p>
-                            <p>To promote the spirit of entrepreneurship for students focusing on technopreneurship.</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-          </div> 
-          </div>
+
             <div class="ButtonProdi w-100 text-center m-0">
               <div class="container float-none w-auto">
                 <div class="row">
@@ -180,12 +147,6 @@
                   <div class="col-sm w-25 mx-3 align-middle buttonElement">
                     <a href="index3.html"><span class="TitleTextButton">IDE Program</span></a>
                   </div>
-                  <div class="col-sm w-25 mx-3 align-middle buttonElement">
-                    <a href="index4.html"><span class="TitleTextButton">Event</span></a>
-                  </div>
-                  <div class="col-sm w-25 mx-3 align-middle buttonElement">
-                    <a href="index5.html"><span class="TitleTextButton">About</span></a>
-                  </div>
                 </div>
               </div>
             </div>
@@ -194,13 +155,12 @@
           <script src="package/jquery/jquery-3.6.1.min.js"></script>
           <script src="package/bootstrap/js/bootstrap.bundle.min.js"></script>
           <script src="assets/js/particles.js"></script>
+          <script src="package/jquery-ui/jquery-ui.min.js"></script>
           <script src="assets/js/app.js"></script>
-          <script src="assets/js/tabs.js"></script>
           <script src="assets/js/isotope.js"></script>
           <script src="assets/js/owl-carousel.js"></script>
           <script src="assets/js/imagesloaded.js"></script>
-          <script src="assets/js/tabs.js"></script>
-          <script src="assets/js/FinproJS.js"></script>
+          <script src="assets/js/custom.js"></script>
           
-        </body>
-            </html>
+  </body>
+</html>

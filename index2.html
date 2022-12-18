@@ -2,160 +2,118 @@
 <html>
     <head>
       <meta charset="utf-8">
-      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Faculty of Computing</title>
 
       <!-- CSS only -->
-      <link href="package/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-      <link href="assets/css/FinproStylesheet.css" rel="stylesheet">
+      <link href="assets/css/bootstrap.min.css" rel="stylesheet">
       <link href="assets/css/animated.css" rel="stylesheet">
-
+      <link href="package/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+      <link href="assets/css/FinproStylesheet.css" rel="stylesheet">
     </head>
+
     <body class="body" style="background-color: black;">
+
       <div id="particles-js"></div>
 
-  <div class="ContentUI">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="Rectangle">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="Rectangle2">
-                  <div class="Heading">
-                    <h2>Visual Communication Design</h2>
+      <div class="ContentUI">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="Rectangle">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="Rectangle2">
+                      <div class="Heading">
+                        <h2>Visual Communication Design</h2>
+                      </div>
+                      <div class="image">
+                        <a href="home.html"><img src="assets/image/switchicon.png" width="30px"></a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="image">
-                    <a href="home.html"><img src="assets/image/switchicon.png" width="30px"></a>
+                </div>
+                <div class="menu">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <nav class="navstyles">
+                        <div class="nav nav-justified nav-tabs" id="nav-tab" role="tablist">
+                          <button class="nav-link rounded-0 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Overview</button>
+                          <button class="nav-link rounded-0 " id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Future Field & Carrier</button>
+                          <button class="nav-link rounded-0 " id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Lecturers</button>
+                          <button class="nav-link rounded-0 " id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false">Vision & Mission</button>
+                        </div>
+                      </nav>
+                      <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active rounded-4" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">                            
+                          <h4>About the Study Program</h4>
+                          <p>Visual Communication Design (VCD) is a major of design study focused on how to reflect the concept of communication using visual design elements that deliver messages and impressions toward specific purposes. Some of the elements are creative expression, design techniques and media observation. The purpose is to deliver informative, communicative and persuasive messages which effectively affect the user’s behavior.</p>
+                        </div>
+                        <div class="tab-pane fade rounded-4" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                          <ul>
+                            <li>Web Designer</li>
+                            <li>Visual Designer</li> 
+                            <li>Grahhic Designer</li>
+                            <li>Illustrator</li>
+                            <li>Creative Director</li>
+                            <li>Art Director</li>
+                        </ul>
+                        </div>
+                        <div class="tab-pane fade rounded-4" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                          <button class="accordion">Fransiska Rachel, S.Sn., M.Ds (Head of Study Program)</button>
+                            <div class="panel"> 
+                              <img src="vcdlectures/Drs-cea99. Nur Hadisukmana, M. Nur Hadisukmana, M.jpg">
+                            </div>
+                          <button class="accordion">Danang Adi Wiratama, S.Ds., M.Ds.</button>
+                            <div class="panel">  
+                            </div>
+                          <button class="accordion">Drs. A.M. Hermanto Laksana, M.Ikom</button>
+                            <div class="panel">  
+                              <p>A.M. Hermanto Laksana is a Visual Communication Design with an interest in photography, communication, and cultural visual.</p>
+                            </div>
+                          <button class="accordion">Lintang Anindita, S.Ds, M.Ds</button>
+                            <div class="panel">
+                            </div>
+                          <button class="accordion">Njoo Dewi Candra Kertasari, S.Ds., M.A.</button>
+                            <div class="panel"> 
+                              <img src="vcdlectures/Njoo Dewi C-f2fec.K 20170100663.jpg">
+                              <p>Njoo Dewi Candra Kertasari is a Visual Communication Design lecturer with an interest in typography.</p> 
+                            </div>
+                          <button class="accordion">Remandhia Mulcki, S.Sn., M.Ds. </button>
+                            <div class="panel"> 
+                              <img src="vcdlectures/Remandhia Mulcki, S-89af3.jpg">
+                              <p>Remandhia Mulcki is a Visual Communication Design lecturer at President University with interest in:  The traditional technique of drawing using watercolor oil painting with realism & expressionism style. And creating digital painting illustration using adobe photoshop Understanding about persuasive communication using visual rhetoric especially visual metaphor Choosing color and personality as an experimental field of study to get a deeper understanding of emotional design </p> 
+                            </div>
+                          <button class="accordion">Rinaldi Aditiya Gratama, S.Ds., MBA</button>
+                            <div class="panel">
+                            </div>
+                        </div>
+                          <div class="tab-pane fade rounded-4" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">
+                            <button class="accordion">Vision</button>
+                            <div class="panel">
+                              <p>In the year 2022 to become the center of education and development of science and technology of information systems that excel in Indonesia, able to compete globally, and play an active role in supporting the industry.</p>
+                            </div>
+                             <button class="accordion">Mission </button>
+                            <div class="panel">
+                              <p>Organizing education and teaching in the field of science and technology of information systems, especially in enterprise-level, which are of high quality.</p>
+                              <p>Conducting research and development in the field of science and technology of information systems, especially in the level of the enterprise, that supports the needs of the industry with high quality</p>
+                              <p>Carrying out community service and empowerment activities related to the field of information systems, especially at the enterprise level.</p>
+                              <p>Cooperating with industries, companies, government, and other institutions in the field of information systems, especially at the enterprise level.</p>
+                              <p>Organizing education and teaching in the field of science and technology of information systems, especially in enterprise-level, which are of high quality.</p>
+                              <p>Conducting research and development in the field of science and technology of information systems, especially in the level of the enterprise, that supports the needs of the industry with high quality</p>
+                              <p>Carrying out community service and empowerment activities related to the field of information systems, especially at the enterprise level.</p>
+                              <p>Cooperating with industries, companies, government, and other institutions in the field of information systems, especially at the enterprise level.</p>
+                            </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="menu">
-              <div class="row">
-                <div class="col-sm-3">
-                  <div class="first-thumb active">
-                    <div class="thumb">
-                      Overview
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="thumb">
-                      Future Field & Career
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                    <div class="thumb">
-                      Lecturer
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                    <div class="thumb">
-                      Vision
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                  <div class="last-thumb">
-                    <div class="thumb">
-                     Mission
-                    </div>
-                  </div>
-                </div>
-              </div>                
-            </div>
-            <div class="col-lg-12">
-              <ul class="Rectangle">
-                <li class="active">
-                  <div>
-                    <div class="thumb">
-                      <div class="row">
-                        <div class="col-lg-12">
-                          <div class="left-text">
-                            <h4>About the Study Program</h4>
-                            <p>Visual Communication Design (VCD) is a major of design study focused on how to reflect the concept of communication using visual design elements that deliver messages and impressions toward specific purposes. Some of the elements are creative expression, design techniques and media observation. The purpose is to deliver informative, communicative and persuasive messages which effectively affect the user’s behavior.</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <div class="thumb">
-                      <div class="row">
-                        <div class="col-lg-12">
-                          <div class="left-text">
-                            <h4>Web Designer</h4>
-                            <h4>Visual Designer</h4> 
-                            <h4>Grahhic Designer</h4>
-                            <h4>Illustrator</h4>
-                            <h4>Creative Director</h4>
-                            <h4>Art Director</h4>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <div class="thumb">
-                      <div class="row">
-                        <div class="col-lg-12">
-                          <div class="left-text">
-                            <h4>Fransiska Rachel, S.Sn., M.Ds (Head of Study hrogram)</h4>
-                            <h4>Danang Adi Wiratama, S.Ds., M.Ds.</h4>
-                            <h4>Drs. A.M. Hermanto Laksana, M.Ikom</h4>
-                            <h4>Lintang Anindita, S.Ds, M.Ds</h4>
-                            <h4>Njoo Dewi Candra Kertasari, S.Ds., M.A. </h4>
-                            <h4>Remandhia Mulcki, S.Sn., M.Ds. </h4>
-                            <h4>Rinaldi Aditiya Gratama, S.Ds., MBA</h4>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <div class="thumb">
-                      <div class="row">
-                        <div class="col-lg-5">
-                          <div class="left-text">
-                            <h4>Vision</h4>
-                            <p>Becoming the leading Visual Communication Design program in Indonesia in 2022, being able to compete globally, to adapt to advancement in computer technology and the new media of visual communication in the preservation of the richness of "Nusantara’s Visual culture".</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <div class="thumb">
-                      <div class="row">
-                        <div class="col-lg-12">
-                          <div class="left-text">
-                            <h4>Mission</h4>
-                            <p>Building the entrepreneurial and leadership spirit within the Visual and Communication Study Program especially in the field of creativepreneurship.</p>
-                            <p>Delivering outstanding teaching and learning activities in the field of visual communication design which can compete at national and international level.</p>
-                            <p>Conducting excellent research and development in the field of of visual communication design especially to excavate the potential wealth of the visual culture of nusantara.</p>
-                            <p>Conducting community service and empowerment in the field of visual communication design, especially to preserve the richness of “Nusantara’s visual culture”</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-          </div> 
-          </div>
+
             <div class="ButtonProdi w-100 text-center m-0">
               <div class="container float-none w-auto">
                 <div class="row">
@@ -171,12 +129,6 @@
                   <div class="col-sm w-25 mx-3 align-middle buttonElement">
                     <a href="index3.html"><span class="TitleTextButton">IDE Program</span></a>
                   </div>
-                  <div class="col-sm w-25 mx-3 align-middle buttonElement">
-                    <a href="index4.html"><span class="TitleTextButton">Event</span></a>
-                  </div>
-                  <div class="col-sm w-25 mx-3 align-middle buttonElement">
-                    <a href="index5.html"><span class="TitleTextButton">About</span></a>
-                  </div>
                 </div>
               </div>
             </div>
@@ -185,13 +137,12 @@
           <script src="package/jquery/jquery-3.6.1.min.js"></script>
           <script src="package/bootstrap/js/bootstrap.bundle.min.js"></script>
           <script src="assets/js/particles.js"></script>
+          <script src="package/jquery-ui/jquery-ui.min.js"></script>
           <script src="assets/js/app.js"></script>
-          <script src="assets/js/tabs.js"></script>
           <script src="assets/js/isotope.js"></script>
           <script src="assets/js/owl-carousel.js"></script>
           <script src="assets/js/imagesloaded.js"></script>
-          <script src="assets/js/tabs.js"></script>
-          <script src="assets/js/FinproJS.js"></script>
+          <script src="assets/js/custom.js"></script>
           
-        </body>
-            </html>
+  </body>
+</html>
