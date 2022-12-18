@@ -24,12 +24,20 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
+
+img {
+	width: 100px;
+}
+
   .grid:after {
 	content: '';
 	display: block;
 	clear: both;
   }
   
+  img {
+	width: 100px;
+  }
   /* ---- .grid-item ---- */
   
   .grid-sizer,
