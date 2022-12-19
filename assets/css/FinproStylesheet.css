@@ -176,6 +176,11 @@ a {
 	margin-left: 1200px;
 }
 
+.ContentUI .Rectangle .Object {
+	margin-left: 0;
+	text-align: left;
+}
+
 /* Home Box */
 .image {
 	position: absolute;
@@ -194,27 +199,28 @@ a {
 	max-height: 1000px;
 }
 /* tab NavBar */
- /* Change background color of buttons on hover */
+/* Change background color of buttons on hover */
  .ContentUI .Rectangle .tab{
 	margin: 0;
   }
-
-.ContentUI .Rectangle .tab button:hover {
+  
+  .ContentUI .Rectangle .tab button:hover {
 	background-color: #02a9f7;
   }
   
   /* Create an active/current tablink class */
-.ContentUI .Rectangle .tab button.active {
-	background-color: #02a9f7;
+  .ContentUI .Rectangle .tab button.active {
+	  background-color: #02a9f7;
   	border-radius: 25px 25px 0px 0px;
   }
   
   /* Style the tab content */
   .ContentUI .Rectangle  .tabcontent {
-	background-color: #02a9f7;
-	display: none;
-	padding: 6px 12px;
-  }
+	  background-color: #02a9f7;
+	  display: none;
+	  padding: 6px 12px;
+	}
+	
 /* accordion  slide down */
 .ContentUI .Rectangle .accordion {
 	background-color: #eee;
@@ -227,8 +233,8 @@ a {
 	outline: none;
 	font-size: 15px;
 	transition: 0.4s;
-  }
-  
+}
+
   .ContentUI .Rectangle .active, .accordion:hover {
 	background-color: #ccc;
   }
@@ -246,12 +252,30 @@ a {
   }
   
   .ContentUI .Rectangle .panel {
-	padding: 0 18px;
-	background-color: white;
-	max-height: 0;
-	overflow: hidden;
-	transition: max-height 0.2s ease-out;
-  }
+	  padding: 0 18px;
+	  background-color: white;
+	  max-height: 0;
+	  overflow: hidden;
+	  transition: max-height 0.2s ease-out;
+	}
+	
+.ContentUI .Rectangle .panel .center {
+	display: flex;
+	justify-content: center;
+}
+
+
+.ContentUI .Rectangle .panel .center img{
+	width:20%;
+}
+
+.ContentUI .Rectangle .panel .img img{
+	width: 100%;
+}
+
+.ContentUI .Rectangle .panel .texter{
+	width: 100%;
+}
   /* -- The Box --*/
 
 .buttonUpper {
